@@ -3,8 +3,8 @@ package model;
 import java.util.List;
 
 public class KeyModel {
-    public String keyHeader;
-    public List<String> attributes;
+    private String keyHeader;
+    private  List<String> attributes;
 
     public String getKeyHeader() {
         return this.keyHeader;

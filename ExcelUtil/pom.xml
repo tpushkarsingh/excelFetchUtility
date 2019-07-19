@@ -8,5 +8,14 @@
     <artifactId>ExcelUtil</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.1</version>
+        </dependency>
+    </dependencies>
 </project>
