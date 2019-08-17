@@ -5,10 +5,10 @@ import java.io.*;
 import java.util.List;
 
 public class ExcelUtil {
-    public static void main(String[] args) {
+    public void execute(String filePath, String outputPath) {
         DictReader dr = new DictReader();
         List<KeyModel> keyModelList =dr.getKeyElement();
-        String csvFile = "sample.csv";
+        String csvFile = filePath;
         BufferedReader br = null;
         String line = "";
 
@@ -16,7 +16,7 @@ public class ExcelUtil {
         try {
 
             br = new BufferedReader(new FileReader(csvFile));
-            File file = new File("output.csv");
+            File file = new File(outputPath);
             FileWriter outputFile = new FileWriter(file);
             CSVWriter writer = new CSVWriter(outputFile);
 
